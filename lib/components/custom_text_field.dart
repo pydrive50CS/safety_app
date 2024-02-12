@@ -50,16 +50,17 @@ class CustomTextField extends StatelessWidget {
         //This is when you click on the text field and keyboard appears
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
-          borderSide: BorderSide(style: BorderStyle.solid, color: Colors.yellow
-              // color: Theme.of(context).primaryColor,
-              ),
+          borderSide: BorderSide(
+            style: BorderStyle.solid, color: Color.fromRGBO(248, 131, 121, 1),
+            // color: Theme.of(context).primaryColor,
+          ),
         ),
         //This is the border color at default
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(30),
           borderSide: BorderSide(
             style: BorderStyle.solid,
-            color: Colors.pink ,
+            color: Colors.pink,
           ),
         ),
         errorBorder: OutlineInputBorder(

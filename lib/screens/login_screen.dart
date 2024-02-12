@@ -27,13 +27,16 @@ class LoginScreen extends StatelessWidget {
                     color: Colors.pink,
                   ),
                 ),
+                SizedBox(
+                  height: 40,
+                ),
                 Image.asset(
                   "assets/login.png",
                   height: 200,
                   width: 200,
                 ),
                 SizedBox(
-                  height: 100,
+                  height: 70,
                 ),
                 CustomTextField(
                   hintText: "Enter name",
