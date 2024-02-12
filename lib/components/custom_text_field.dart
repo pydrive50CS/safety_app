@@ -1,26 +1,27 @@
 import 'package:flutter/material.dart';
 
 class CustomTextField extends StatelessWidget {
-  const CustomTextField(
-      {super.key,
-      this.controller,
-      this.enable = true,
-      this.focusNode,
-      this.hintText,
-      this.isPassword = false,
-      this.keyboardType,
-      this.maxLines,
-      this.onSave,
-      this.prefix,
-      this.suffix,
-      this.validate,
-      this.check,
-      this.textInputAction});
+  const CustomTextField({
+    super.key,
+    this.controller,
+    this.enable = true,
+    this.focusNode,
+    this.hintText,
+    this.isPassword = false,
+    this.keyboardType,
+    this.maxLines,
+    this.onSave,
+    this.prefix,
+    this.suffix,
+    this.validate,
+    this.check,
+    this.textInputAction,
+  });
 
   final String? hintText;
   final TextEditingController? controller;
-  final String Function(String?)? validate;
-  final String? Function(String?)? onSave;
+  final String? Function(String?)? validate;
+  final Function(String?)? onSave;
   final int? maxLines;
   final bool isPassword;
   final bool enable;
