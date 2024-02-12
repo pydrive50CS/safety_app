@@ -13,7 +13,6 @@ class EmergencyWidget extends StatelessWidget {
       height: MediaQuery.of(context).size.height / 5,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        // color: Colors.pink,
       ),
       child: ListView(
         physics: BouncingScrollPhysics(),

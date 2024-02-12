@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:women_safety_app/utils/awesome_quotes.dart';
+import 'package:women_safety_app/utils/constants.dart';
 import 'package:women_safety_app/widgets/home_widgets/custom_app_bar.dart';
 import 'package:women_safety_app/widgets/home_widgets/custom_carousel.dart';
 import 'package:women_safety_app/widgets/home_widgets/emergency/emergency_widget.dart';
@@ -34,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(126, 0, 108, 1),
+      backgroundColor: backgroundColor,
       appBar: AppBar(
         title: Text(widget.title),
         backgroundColor: Colors.white,
